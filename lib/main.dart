@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Drawer',
+      title: 'Flutter Drawer Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -20,6 +20,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  
+  String name= "Teekam Singh";
+  String email= "teekam***@gmail.com";
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,8 +40,8 @@ class MyHomePage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountName: Text("Teekam Singh"),
-               accountEmail: Text("teekam***@gmail.com"),
+              accountName: Text(name),
+               accountEmail: Text(email),
                currentAccountPicture: new CircleAvatar(
                  backgroundImage: NetworkImage("https://picjumbo.com/wp-content/uploads/free-stock-images-1080x720.jpg"),
                  backgroundColor: Colors.grey,
@@ -45,47 +49,47 @@ class MyHomePage extends StatelessWidget {
                otherAccountsPictures: <Widget>[
                  new CircleAvatar(
                    backgroundImage:NetworkImage("https://www.w3schools.com/howto/img_forest.jpg"),
-                   backgroundColor: Colors.grey,
+                   backgroundColor: Colors.grey[200],
                  ),
                ],
             ),
             
-            FlatButton(onPressed: (){},
+            FlatButton(onPressed: ()=>null,
                child: Row(
                  children:<Widget>[
                    Icon(Icons.home),
                    Text("Home")
                  ]
                )),
-               FlatButton(onPressed: (){},
+               FlatButton(onPressed: ()=>null,
                child: Row(
                  children:<Widget>[
                    Icon(Icons.camera_alt),
                    Text("open camera")
                  ]
                )),
-               FlatButton(onPressed: (){},
+               FlatButton(onPressed: ()=>null,
                child: Row(
                  children:<Widget>[
                    Icon(Icons.email),
                    Text("Send Email")
                  ]
                )),
-               FlatButton(onPressed: (){},
+               FlatButton(onPressed: ()=>null,
                child: Row(
                  children:<Widget>[
                    Icon(Icons.videocam),
                    Text("Record Video")
                  ]
                )),
-               FlatButton(onPressed: (){},
+               FlatButton(onPressed: ()=>null,
                child: Row(
                  children:<Widget>[
                    Icon(Icons.info),
                    Text("About")
                  ]
                )),
-               FlatButton(onPressed: (){},
+               FlatButton(onPressed: ()=>null,
                child: Row(
                  children:<Widget>[
                    Icon(Icons.feedback),
